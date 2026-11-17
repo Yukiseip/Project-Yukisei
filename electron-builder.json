@@ -1,0 +1,30 @@
+{
+  "appId": "com.yukisei.desktop",
+  "productName": "Yukisei",
+  "copyright": "Copyright © 2026 Yukisei",
+  "directories": {
+    "output": "release"
+  },
+  "asar": false,
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "scripts/**/*",
+    "personas/**/*",
+    "public/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "dir",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ]
+  }
+}
+

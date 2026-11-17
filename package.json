@@ -1,0 +1,31 @@
+{
+  "name": "yukisei",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Yukisei: Compañera virtual de escritorio en español inspirada en AIRI, con avatar Live2D interactivo, Ollama local y control de Windows",
+  "author": "Yukisei",
+  "license": "MIT",
+  "main": "./electron/main.mjs",
+  "scripts": {
+    "dev": "vite",
+    "dev:desktop": "node scripts/dev-desktop.mjs",
+    "build": "vite build",
+    "start": "vite build && electron .",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@moeru/std": "^0.1.0-beta.17",
+    "@proj-airi/stage-ui-live2d": "workspace:^",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.41"
+  },
+  "devDependencies": {
+    "@proj-airi/unplugin-live2d-sdk": "^0.1.7",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "electron": "^43.8.4",
+    "unocss": "^66.7.5",
+    "vite": "^8.3.4",
+    "vue-tsc": "^3.3.11"
+  }
+}
